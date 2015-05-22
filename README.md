@@ -1,5 +1,6 @@
 # ajax-request-tracker
-Override AJAX Get and Post operations in jQuery or Angular and track how many are active.
+Override AJAX Get and Post operations in jQuery or Angular and track how many are active.  
+If you do all your AJAX in the `document.ready` state, then you can setup a timer in your `window.load` state to run code when they are complete.  
   
   
 ##jquery.ajax.tracker.js   
