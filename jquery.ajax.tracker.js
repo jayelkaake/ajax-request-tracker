@@ -27,8 +27,6 @@ Tracker.Ajax = {
         },
         get: function (options) {
             Tracker.Ajax.requests.begin();
-            Quintiles.Log.Console("Ajax alive(" + Tracker.Ajax.requests.alive + ")");
-
             return Tracker.Ajax.base.get(options).then(function (data) {
                 Tracker.Ajax.requests.end();
                 return $.Deferred().promise(data);
